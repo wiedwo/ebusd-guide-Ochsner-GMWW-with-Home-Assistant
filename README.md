@@ -28,8 +28,7 @@ graph LR
         Pi[Raspberry Pi] -->|uses| Adapter  
         Router[Router] -->|network connection| Pi  
         Router -->|network connection| Adapter  
-        Ebusd[ebusd]
- 
+        
         subgraph Raspberry Pi  
             subgraph Home Assistant  
                 NodeRed[Node-RED]  
@@ -47,7 +46,10 @@ graph LR
 
 ```
 
-The heating system is composed of several interconnected components that work together to control and monitor the heating pump. The central control unit of this system is a Raspberry Pi, which is connected to the network via a general router.
+The heating system is composed of several interconnected components that work together to control and monitor the heating pump. 
+The central control unit of this system is a Raspberry Pi with Home Assistant installed.
+**IMPORTANT NOTE: In this configuration the eBUS Adapter(v5) is NOT INSTALLED onto RPI4, it is installed inside the heating pump as standalone adapter
+and connected to the router via ethernet** This can also be done with Wifi, but in my case WiFi was not stable enough.  
 
 ### Components
 
