@@ -56,16 +56,18 @@ The heating system is composed of several interconnected components that work to
 
 ### Home Assistant (HA) on Raspberry Pi
 
-**It is highly recommended to have sufficient knowledge how to install and operate Home Assistant !!** (This is not part of manual)
-
+**It is highly recommended to have sufficient knowledge how to install and operate Home Assistant prior to install and operate ebusd !!** (This is not part of manual)
+###It is highly recommended to have sufficient knowledge how to install and operate Home Assistant prior to install and operate ebusd !! (This is not part of manual)
 Within the Raspberry Pi, the Home Assistant host is running to manage and isolate different software components using (internal!) containers. The software components are called
 Add-On's or integrations.
 The following Add-On's are in operation:
 
 - **ebusd:** A daemon for handling communication with eBus devices like the heating pump. It interfaces with the eBus Adapter to control and monitor the pump.
-- **MQTT Broker:** A message broker that supports the MQTT protocol. It allows for efficient and reliable communication between the Node-RED and ebusd containers.
-- Node-RED: Can be used, but not necessary (programming tool to create automation flows).
-- Portainer: Can be used, but not necessary (management tool to manage the internal Docker containers).
+- **MQTT Broker:** A message broker that supports the MQTT protocol. It allows for efficient and reliable communication between Home Assistant and ebusd AddOn.
+- **Advanced SSH & Web Terminal** (to enter HA command-line via SSH)
+- **Studio Code Server** or **File editor** (to edit configuration files and watch log files aso)
+- Node-RED: Can be used, but not needed here (programming tool to create automation flows).
+- Portainer: Can be used, but not needed here (management tool to manage the internal Docker containers).
 
 ### Network Connections
 
