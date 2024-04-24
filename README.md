@@ -28,7 +28,8 @@ graph LR
         Pi[Raspberry Pi] -->|uses| Adapter  
         Router[Router] -->|network connection| Pi  
         Router -->|network connection| Adapter  
-  
+        Ebusd[ebusd]
+ 
         subgraph Raspberry Pi  
             subgraph Home Assistant  
                 NodeRed[Node-RED]  
