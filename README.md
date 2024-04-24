@@ -10,7 +10,7 @@ You can setup the same for every other eBUS based heating pump, the only differe
 
 The following links are very helpful and might help understanding different topcis
 
-- [Home Assistant Installation](https://www.home-assistant.io/installation/)/)
+- [Home Assistant Installation](https://www.home-assistant.io/installation/)
 - [ebusd wiki](https://github.com/john30/ebusd/wiki)
 - [eBUS Adapter Shield v5](https://adapter.ebusd.eu/v5/)
 - [A brief introduction to Node-RED](https://noderedguide.com/nr-lecture-1/)
