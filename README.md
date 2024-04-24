@@ -48,6 +48,7 @@ graph LR
 
 The heating system is composed of several interconnected components that work together to control and monitor the heating pump. 
 The central control unit of this system is a Raspberry Pi with Home Assistant installed.
+ 
 **IMPORTANT NOTE: In this configuration the eBUS Adapter(v5) is NOT INSTALLED onto RPI4, it is installed inside the heating pump as standalone adapter
 and connected to the router via ethernet** This can also be done with Wifi, but in my case WiFi was not stable enough.  
 
@@ -56,7 +57,7 @@ and connected to the router via ethernet** This can also be done with Wifi, but 
 - **Heating Pump:** The primary device responsible for circulating heat transfer fluid throughout the heating system.
 - **eBus Adapter:** An interface device that enables communication between the heating pump and the Raspberry Pi.
 - **Router:** A network device that facilitates data communication between the Raspberry Pi, the eBus Adapter, and potentially other networked devices.
-- **Raspberry Pi:** A compact computer that hosts a Home Assistant environment and serves as the brain of the system. It uses the eBus Adapter to interface with the heating pump.
+- **Home Assistant on Raspberry Pi** (or other Hardware): A compact computer that hosts a Home Assistant environment and serves as the brain of the system. It uses the eBus Adapter to interface with the heating pump.
 
 ### Home Assistant (HA) on Raspberry Pi
 
@@ -64,7 +65,6 @@ and connected to the router via ethernet** This can also be done with Wifi, but 
 Within the Raspberry Pi, the Home Assistant host is running to manage and isolate different software components using internal(!) containers. So no knowledge about
 container necesssary!
 The software components in HA are called Add-On's or integrations.
-
 The following Add-On's must be installed and running:
 
 - **ebusd:** A daemon for handling communication with eBus devices like the heating pump. It interfaces with the eBus Adapter to control and monitor the pump.
@@ -83,7 +83,7 @@ Home Assistant communicates with each other and with external devices through th
 
 The following steps provide a step by step guide to setup such an environment from scratch.
 
-1) [Raspberry Pi and Docker](./docs/raspberry_pi_docker.md)
+1) [Raspberry Pi and Home Assistant](./docs/raspberry_pi_docker.md)
 2) [eBUS Adapter Shield v5](./docs/ebus_adapter.md)
 3) [Portainer](./docs/portainer.md)
 4) [MQTT](./docs/mqtt.md)
