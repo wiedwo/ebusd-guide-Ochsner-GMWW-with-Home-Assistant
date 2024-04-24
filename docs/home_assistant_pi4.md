@@ -1,4 +1,4 @@
-# Raspberry Pi and Docker
+# Install Home Assistant on RPI4
 
 By following the [getting started](https://www.raspberrypi.com/documentation/computers/getting-started.html) you setup you raspberry Pi. You should wire it with a ethernet cable directly to router/switch.
 
