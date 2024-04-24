@@ -1,15 +1,16 @@
 # ebusd-ochsner
 
-This repository describes how to setup a infrastructure to control a eBUS based heating pump, in this case:
- - Ochsner GMWW 11 plus (OTE3)
- - Home Assistant (Open source home automation that runs on a Raspberry Pi or a local server) 
-You can setup the same for every other eBUS based heading pump, the only difference are the ebusd specific configurations.
+This repository describes how to setup a infrastructure to control a eBUS based heating pump, **in this case:**
+ - **Ochsner GMWW 11 plus (OTE3)** (smaller and bigger models may also work)
+ - **Home Assistant** (Open source home automation that runs on a Raspberry Pi or a local server)
+
+You can setup the same for every other eBUS based heating pump, the only difference are the ebusd specific configurations.
 
 ## Helpful links
 
 The following links are very helpful and might help understanding different topcis
 
-- [Docker Simplified: A Hands-On Guide for Absolute Beginners](https://www.freecodecamp.org/news/docker-simplified-96639a35ff36/)
+- [Home Assistant Installation](https://www.home-assistant.io/installation/)/)
 - [ebusd wiki](https://github.com/john30/ebusd/wiki)
 - [eBUS Adapter Shield v5](https://adapter.ebusd.eu/v5/)
 - [A brief introduction to Node-RED](https://noderedguide.com/nr-lecture-1/)
