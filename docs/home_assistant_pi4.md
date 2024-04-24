@@ -1,6 +1,6 @@
 # Install Home Assistant on RPI4
 
-By following the [getting started](https://www.home-assistant.io/installation/raspberrypi/))) you setup HA onyou raspberry Pi. 
+By following the [getting started](https://www.home-assistant.io/installation/raspberrypi/) you setup HA on your raspberry Pi. 
 **You should wire it with a ethernet cable directly to router/switch.**
 
 ## Docker on Raspberry Pi
