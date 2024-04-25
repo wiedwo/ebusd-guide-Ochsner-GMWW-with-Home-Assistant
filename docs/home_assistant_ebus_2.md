@@ -8,7 +8,8 @@
 
 **you should see something like this :**
 
-```sh
+<details>
+<summary>you should see something like this :</summary>
 s6-rc: info: service s6rc-oneshot-runner: starting
 s6-rc: info: service s6rc-oneshot-runner successfully started
 s6-rc: info: service fix-attrs: starting
@@ -47,7 +48,9 @@ s6-rc: info: service legacy-services successfully started
 2024-04-25 18:29:21.524 [mqtt notice] connection established
 2024-04-25 18:29:21.539 [mqtt info] received set topic for heating Fusspunkt Vorlauftemp. Heizen 03-001
 2024-04-25 18:29:21.539 [bus info] send message: 311006230603810048f000
-```
+....
+</details>
+
 
 **proceed with next step** 
 #
