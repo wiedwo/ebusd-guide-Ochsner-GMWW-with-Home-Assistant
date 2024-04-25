@@ -23,7 +23,7 @@ void the warranty! Only do this if you are aware of the risk and accept it.***
 
 > The easi dashboard can be accessed via http://192.168.4.1
 
-![image](pictures/easi#1.png)
+![image](pictures/easi1.png)
 
 The easiest way to make the settings is via network, e.g. via the WIFI access point with SSID "EBUS" (without password), which is started by 
 the firmware after the first flashing or after pressing+holding the button during boot (as long as the LEDs are fading). 
