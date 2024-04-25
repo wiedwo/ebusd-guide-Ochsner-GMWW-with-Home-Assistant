@@ -1,1 +1,14 @@
-
+scanconfig: true
+loglevel_all: info
+mqtttopic: ebusd
+mqttint: /config/ebusd-configuration/mqtt-hassio.cfg
+mqttjson: true
+mode: ens
+network_device: 192.168.178.68:9999
+latency: 40
+pollinterval: 10
+configpath: /config/ebusd-configuration/ochsner/1524849
+accesslevel: "*"
+http: false
+mqttvar: "\"filter-name=\""
+mqttretain: false
