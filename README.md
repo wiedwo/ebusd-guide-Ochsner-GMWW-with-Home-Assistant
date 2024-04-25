@@ -38,7 +38,7 @@ The heating system is composed of several interconnected components that work to
 The central control unit of this system is a Raspberry Pi with Home Assistant installed.
  
 **IMPORTANT NOTE: In this configuration the eBUS Adapter(v5) is NOT INSTALLED onto RPI4, it is installed inside the heating pump as standalone adapter
-and connected to the router via ethernet** This can also be done with Wifi, but in my case WiFi was not stable enough.  
+and connected to the router via ethernet** This can also be done with onboard Wifi, but in my case WiFi was not stable enough.  
 
 ## Components
 
