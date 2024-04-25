@@ -28,3 +28,6 @@ void the warranty! Only do this if you are aware of the risk and accept it.***
 - define your network WiFi/Ethernet settings and reboot with new ip address
   
 ![image](pictures/easi2.png)
+
+**Some things won't work at this point, but the network connection needs to work**
+**Don't worry, go on with next step**
