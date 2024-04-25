@@ -92,6 +92,7 @@ The following steps provide a step by step guide to setup such an environment fr
 6) [Inspect MQTT Explorer](./docs/mqtt_explorer.md)
 7) [Adjust ebusd](./docs/ebusd.md)
 8) [Create Home Assistant dashboard](./docs/home_assistant_dashboard.md)
+9) [ebusctl commands](./docs/ebusctl_commands.md)
 
 #
 
