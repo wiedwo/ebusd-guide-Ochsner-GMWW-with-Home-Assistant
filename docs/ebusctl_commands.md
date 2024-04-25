@@ -35,7 +35,7 @@ To exit the container => close the putty-session or "exit"
  -> decodiert die Datentypen
 
 ## ebusctl r -f (force read from bus with my "names")
-
+```
 ebusctl r -f  'Aktuelle Aussentemperatur 00-000'
 ebusctl r -f  'Istwert Heizkreis Vorlauftemp. 00-002'
 ebusctl r -f  'Vorlauftemp. Waermepumpe TWV 00-007'
@@ -78,10 +78,12 @@ ebusctl r -f  'Heizenergie kWh 23-001'
 ebusctl r -f  'Heizenergie MWh 23-010'
 ebusctl r -f  'Warmwasserenergie MWh 23-013'
 ebusctl r -f  'Warmwasserenergie kWh 23-066'
+```
 
 ## ebusctl w (write to bus , use with care !)
 example:
 ebusctl w -c heating ' Warmwassertemp. SOLL 05-051' 55.0
+
 
 #### mosquitto_pub
 
