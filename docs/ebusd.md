@@ -151,3 +151,7 @@ Once you have setup the eBUS adapter, the docker containers ebusd and mqtt, you 
 To verify if you can change a writable eBUS address, you must append ``/set`` to the topic, switch to raw format, type in the desired value and click publish. To verify if the value has been changed by your headpump, go to the OTE display and double check it.
 
 ![image](pictures/mqtt_explorer_set.png)
+
+**proceed with next step** 
+#
+**[Create Home Assistant dashboard](home_assistant_dsashboard.md)**
