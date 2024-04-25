@@ -1,20 +1,28 @@
 # Install Home Assistant on RPI4
 
 By following the [getting started](https://www.home-assistant.io/installation/raspberrypi/) you setup HA on your raspberry Pi. 
-**You should wire it with a ethernet cable directly to router/switch.**
+You should wire it with a ethernet cable directly to router/switch.
 
-## Install eBUSd AddOn in Home Assistant
+## Install and configure eBUSd AddOn in Home Assistant
 - Goto Home Assistant Settings => Add-ons => ADD-On Store => search eBUSd => install
 
 ## create an ebusd configuration directory in Home Assistant
-- /config/ebusd-configuration/
-- /config/ebusd-configuration/ochsner
+- create directory /config/ebusd-configuration/
+- create directory /config/ebusd-configuration/ochsner
 - copy mqtt-hassio.cfg to /config/ebusd-configuration/
+- copy _templates.csv to /config/ebusd-configuration/ochsner/1524849
+- copy broadcast.csv to /config/ebusd-configuration/ochsner/1524849
+- copy gmww11plus.csv to /config/ebusd-configuration/ochsner/1524849
+- rename gmww11plus.csv to 15.24849.csv
+  
+## Check mqtt-hassio.cfg 
 
-## Configure eBUSd AddOn in Home Assistant
+- check 'network_device:' and 'configpath:'
+- start eBUSd AddOn
+- check protocol for errors
 
-- Goto Home Assistant Settings => Add-ons => ADD-On Store => search eBUSd => install
-- goto to Configuration and use following YAML-Code to setup eBUSd:
+---------------------------
+
 
 ```sh
 scanconfig: true
@@ -32,7 +40,10 @@ http: false
 mqttvar: "\"filter-name=\""
 mqttretain: false
 ```
-- 
+- after checking 'network_device:' and 'configpath:' start eBUSd AddOn
+
+
+
 Here is a [Install Docker on Raspberry Pi](https://www.simplilearn.com/tutorials/docker-tutorial/raspberry-pi-docker) guide you can follow.
 
 ## Docker Volumes
