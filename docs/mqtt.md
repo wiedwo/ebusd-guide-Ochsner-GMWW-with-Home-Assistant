@@ -20,7 +20,7 @@ The broker is at the heart of the system. It is responsible for receiving all me
 2) as App in your private PC/Workstation/MAC aso
 [MQTT Explorer Downloads](https://mqtt-explorer.com/)
 
-
+# Configure MQTT Explorer
 
 
 ```sh
