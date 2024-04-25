@@ -68,7 +68,9 @@ The software components in HA are called Add-On's or integrations.
 The following Add-On's must be installed and running:
 
 - **ebusd:** A daemon for handling communication with eBus devices like the heating pump. It interfaces with the eBus Adapter to control and monitor the pump.
+    [Home Assistant eBUSd](https://www.home-assistant.io/integrations/ebusd/)
 - **MQTT Broker:** A message broker that supports the MQTT protocol. It allows for efficient and reliable communication between Home Assistant and ebusd AddOn.
+    [Home Assistant MQTT](https://www.home-assistant.io/integrations/mqtt)
 - **Advanced SSH & Web Terminal** (to enter HA command-line via SSH)
 - **Studio Code Server** or **File editor** (to edit configuration files and watch log files aso)
 - Node-RED: Can be used, but not needed here (programming tool to create automation flows).
