@@ -61,6 +61,7 @@ s6-rc: info: service legacy-services successfully started
 2024-04-25 18:29:21.363 [update notice] sent poll-read heating Istwert Heizkreis Vorlauftemp. 00-002 QQ=31: 2;0;0d;°C;100.0;0.0;32.1
 2024-04-25 18:29:21.524 [mqtt notice] connection established
 2024-04-25 18:29:21.539 [mqtt info] received set topic for heating Fusspunkt Vorlauftemp. Heizen 03-001
+.....
 ```
 -----------------------------------------------------
 
