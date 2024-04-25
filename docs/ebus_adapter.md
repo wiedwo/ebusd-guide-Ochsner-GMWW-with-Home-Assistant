@@ -33,4 +33,4 @@ void the warranty! Only do this if you are aware of the risk and accept it.***
 #
 **Don't worry, proceed with next step** 
 #
-**[ebusd](./docs/ebusd.md)**
+**[ebusd](./ebusd.md)**
