@@ -30,4 +30,7 @@ void the warranty! Only do this if you are aware of the risk and accept it.***
 ![image](pictures/easi2.png)
 
 **Some things won't work at this point, but the network connection needs to work**
-**Don't worry, go on with next step**
+#
+**Don't worry, proceed with next step** 
+#
+**[ebusd](./docs/ebusd.md)**
