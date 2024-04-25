@@ -6,7 +6,7 @@ You should wire it with a ethernet cable directly to router/switch.
 ## Install and configure eBUSd AddOn in Home Assistant
 - Goto Home Assistant Settings => Add-ons => ADD-On Store => search eBUSd => install
 
-## create an ebusd configuration directory in Home Assistant
+## Create an ebusd configuration directory in Home Assistant
 - create directory /config/ebusd-configuration/
 - create directory /config/ebusd-configuration/ochsner
 - copy mqtt-hassio.cfg to /config/ebusd-configuration/
