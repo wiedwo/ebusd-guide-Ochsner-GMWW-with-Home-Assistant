@@ -78,7 +78,7 @@ The following Add-On's must be installed:
 The Raspberry Pi and the eBus Adapter both connect to the network through the Router, enabling remote access and control. This setup allows for monitoring and managing the heating system from a networked computer or a smart device.
 Home Assistant communicates with each other and with external devices through the MQTT Broker and eBus Adapter, creating a robust and flexible control system for the heating pump.
 
-### Step by step guide
+## Step by step guide
 
 The following steps provide a step by step guide to setup such an environment from scratch.
 
