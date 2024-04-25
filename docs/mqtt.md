@@ -9,8 +9,8 @@ You have to install the MQTT integration in Home Assistant.
 
 # MQTT Explorer
 
-MQTT is a standard messaging protocol designed specifically for use in IoT applications. It requires a so called MQTT broker.
-The broker is at the heart of the system. It is responsible for receiving all messages, filtering them, and sending them to the subscribers, here the MQTT clients. An MQTT broker can potentially handle millions of connected MQTT clients.
+MQTT Explorer is a comprehensive MQTT client that provides a structured overview of your MQTT topics and makes working with 
+devices/services on your broker dead-simple.
 
 **HowTO install MQTT Explorer** :
 
