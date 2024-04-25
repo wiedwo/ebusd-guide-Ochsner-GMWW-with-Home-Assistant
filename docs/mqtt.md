@@ -26,13 +26,3 @@ devices/services on your broker dead-simple.
 
 
 
-
-```sh
-docker run -d -p 1883:1883 --name mqtt --restart=always -v /home/pi/data/mqtt_data/mosquitto.conf:/mosquitto/config/mosquitto.conf eclipse-mosquitto:2
-```
-
-The ``mosquitto.conf`` can be changed to your needs, here is a minimal example which I use to allow anonymous communication.
-
-```conf
-allow_anonymous true
-```
