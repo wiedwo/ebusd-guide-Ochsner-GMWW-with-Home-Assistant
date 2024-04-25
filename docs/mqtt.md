@@ -25,8 +25,9 @@ devices/services on your broker dead-simple.
 
 ![image](pictures/mqtt_explorer.png)
 
-
-[Start and check eBUSd](./dosc/home_assistant_ebus_2.md)
+**proceed with next step** 
+#
+**[Start and check eBUSd](home_assistant_ebus_2.md)**
 
 
 
