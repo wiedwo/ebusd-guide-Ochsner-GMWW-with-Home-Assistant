@@ -52,6 +52,7 @@ and connected to the router via ethernet** This can also be done with onboard Wi
 - **Some tools** Some tools to make your job easier
   
     ***WINSCP*** [WINSCP Download](https://winscp.net/eng/download.php)
+  
     ***PUTTY***  [PUTTY Download](https://putty.org/)
 
 ### Home Assistant (HA) on Raspberry Pi
@@ -101,7 +102,6 @@ The following links are very helpful and might help understanding different topc
 - [Home Assistant Installation on RPI4](https://www.home-assistant.io/installation/raspberrypi/)
 - [ebusd wiki](https://github.com/john30/ebusd/wiki)
 - [eBUS Adapter Shield v5](https://adapter.ebusd.eu/v5/)
-- [A xxxxxx Node-RED](https://noderedguide.com/nr-lecture-1/)
 - [MQTT beginner’s guide](https://www.u-blox.com/en/blogs/insights/mqtt-beginners-guide#:~:text=MQTT%20is%20a%20publish%2Dand,topics%20handled%20by%20a%20broker.)
-- [Why XXXXX](https://www.xxxxxiner.io/why-portainer)
+
 
