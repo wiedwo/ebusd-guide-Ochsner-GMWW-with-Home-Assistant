@@ -72,7 +72,9 @@ The following Add-On's must be installed and running:
 - **MQTT Broker:** A message broker that supports the MQTT protocol. It allows for efficient and reliable communication between Home Assistant and ebusd AddOn.
     [Home Assistant MQTT](https://www.home-assistant.io/integrations/mqtt)
 - **Advanced SSH & Web Terminal** (to enter HA command-line via SSH)
+    [Home Assistant Community Add-on](https://github.com/hassio-addons/addon-ssh)
 - **Studio Code Server** or **File editor** (to edit configuration files and watch log files aso)
+    [Home Assistant Community Add-on](https://github.com/hassio-addons/addon-vscode)
 - Node-RED: Can be used, but not needed here (programming tool to create automation flows).
 - Portainer: Can be used, but not needed here (management tool to manage the internal Docker containers).
 
