@@ -1,4 +1,6 @@
-# ebusd-ochsner
+# Installation of eBbus adapter with Home Assistant eBUSd AddOn to use with a Ochsner GMWW 11 plus heat pump
+
+This repo is a fork from : https://github.com/Lorilatschki/ebusd-guide
 
 This repository describes how to setup a infrastructure to control a eBUS based heating pump, **in this case:**
  - **Ochsner GMWW 11 plus (OTE3)** (smaller and bigger models may also work)
