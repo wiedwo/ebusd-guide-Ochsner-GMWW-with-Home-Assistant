@@ -1,4 +1,4 @@
-# ebusd
+# eBUSd
 
 **eBUSd**(eamon) is a daemon for handling communication with eBUS devices connected to a 2-wire bus system ("energy bus" used by numerous heating systems).
 
