@@ -83,7 +83,7 @@ Home Assistant communicates with each other and with external devices through th
 
 The following steps provide a step by step guide to setup such an environment from scratch.
 
-1) [Raspberry Pi and Home Assistant](./docs/raspberry_pi_docker.md)
+1) [Raspberry Pi and Home Assistant](./docs/home_assistant_pi4.md)
 2) [eBUS Adapter Shield v5](./docs/ebus_adapter.md)
 3) [Portainer](./docs/portainer.md)
 4) [MQTT](./docs/mqtt.md)
