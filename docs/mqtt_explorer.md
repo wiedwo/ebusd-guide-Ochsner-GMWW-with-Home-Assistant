@@ -8,4 +8,4 @@
 
 **proceed with next step** 
 #
-**[eBUSd Adjustments](ebus.md)**
+**[eBUSd Adjustments](ebusd.md)**
