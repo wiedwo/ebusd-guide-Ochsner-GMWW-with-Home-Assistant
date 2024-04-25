@@ -17,3 +17,7 @@ You should wire it with a ethernet cable directly to router/switch.
   
 ## Check mqtt-hassio.cfg 
 - check 'network_device:' and 'configpath:'
+
+**proceed with next step** 
+#
+**[eBUSd on Home Assistant](home_assistant_ebusd.md)**
