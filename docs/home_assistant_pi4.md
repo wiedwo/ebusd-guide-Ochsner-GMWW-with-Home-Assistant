@@ -14,3 +14,9 @@ You should wire it with a ethernet cable directly to router/switch.
     [Home Assistant Community Add-on](https://github.com/hassio-addons/addon-ssh)
 - **Studio Code Server** or **File editor** (to edit configuration files and watch log files aso)
     [Home Assistant Community Add-on](https://github.com/hassio-addons/addon-vscode)
+
+
+**proceed with next step** 
+#
+**[eBUSd on Home Assistant on RPi4](home_assistant_ebusd.md)**
+  
