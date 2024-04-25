@@ -21,7 +21,7 @@ devices/services on your broker dead-simple.
 
 # Configure MQTT Explorer
 
-adjust your IP address
+**adjust your IP address !**
 
 ![image](pictures/mqtt_explorer.png)
 
