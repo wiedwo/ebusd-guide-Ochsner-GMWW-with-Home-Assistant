@@ -5,6 +5,9 @@ The broker is at the heart of the system. It is responsible for receiving all me
 
 You have to install the MQTT integration in Home Assistant.
 
+Goto Home Assistant Settings => Integrations => ADD INTEGRATION => search MQTT => install => configure 
+
+
 ```sh
 docker run -d -p 1883:1883 --name mqtt --restart=always -v /home/pi/data/mqtt_data/mosquitto.conf:/mosquitto/config/mosquitto.conf eclipse-mosquitto:2
 ```
