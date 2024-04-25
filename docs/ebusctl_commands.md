@@ -83,7 +83,7 @@ ebusctl r -f  'Warmwasserenergie kWh 23-066'
 ## ebusctl w (write to bus , use with care !)
 example:
 ebusctl w -c heating ' Warmwassertemp. SOLL 05-051' 55.0
-
+-> set temperature to 55.0 °C
 
 #### mosquitto_pub
 
