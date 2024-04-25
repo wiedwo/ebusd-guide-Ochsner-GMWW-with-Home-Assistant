@@ -3,8 +3,12 @@
 By following the [getting started](https://www.home-assistant.io/installation/raspberrypi/) you setup HA on your raspberry Pi. 
 **You should wire it with a ethernet cable directly to router/switch.**
 
-## HIER GEHTS WEITER Docker on Raspberry Pi
+## Install eBUSd AddOn in Home Assistant
 
+- Goto Home Assistant Settings => Add-ons => ADD-On Store => search eBUSd => install
+- goto to Configuration and use following YAML-Code to setup eBUSd:
+
+- 
 Here is a [Install Docker on Raspberry Pi](https://www.simplilearn.com/tutorials/docker-tutorial/raspberry-pi-docker) guide you can follow.
 
 ## Docker Volumes
