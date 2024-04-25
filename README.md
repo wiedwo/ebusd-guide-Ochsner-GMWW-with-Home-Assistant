@@ -6,18 +6,6 @@ This repository describes how to setup a infrastructure to control a eBUS based 
 
 You can setup the same for every other eBUS based heating pump, the only difference are the ebusd specific configurations.
 
-## Helpful links
-
-The following links are very helpful and might help understanding different topcis
-
-- [Home Assistant Installation on multiple OS](https://www.home-assistant.io/installation/)
-- [Home Assistant Installation on RPI4](https://www.home-assistant.io/installation/raspberrypi/)
-- [ebusd wiki](https://github.com/john30/ebusd/wiki)
-- [eBUS Adapter Shield v5](https://adapter.ebusd.eu/v5/)
-- [A xxxxxx Node-RED](https://noderedguide.com/nr-lecture-1/)
-- [MQTT beginner’s guide](https://www.u-blox.com/en/blogs/insights/mqtt-beginners-guide#:~:text=MQTT%20is%20a%20publish%2Dand,topics%20handled%20by%20a%20broker.)
-- [Why XXXXX](https://www.xxxxxiner.io/why-portainer)
-
 ## Component overview
 
 ```mermaid
@@ -52,7 +40,7 @@ The central control unit of this system is a Raspberry Pi with Home Assistant in
 **IMPORTANT NOTE: In this configuration the eBUS Adapter(v5) is NOT INSTALLED onto RPI4, it is installed inside the heating pump as standalone adapter
 and connected to the router via ethernet** This can also be done with Wifi, but in my case WiFi was not stable enough.  
 
-### Components
+## Components
 
 - **Heating Pump:** The primary device responsible for circulating heat transfer fluid throughout the heating system.
 - **eBus Adapter:** An interface device that enables communication between the heating pump and the Raspberry Pi.
@@ -93,3 +81,17 @@ The following steps provide a step by step guide to setup such an environment fr
 5) [ebusd](./docs/ebusd.md)
 6) [Node-RED](./docs/nodered.md)
 3) [Portainer](./docs/portainer.md)
+
+
+## Helpful links
+
+The following links are very helpful and might help understanding different topcis
+
+- [Home Assistant Installation on multiple OS](https://www.home-assistant.io/installation/)
+- [Home Assistant Installation on RPI4](https://www.home-assistant.io/installation/raspberrypi/)
+- [ebusd wiki](https://github.com/john30/ebusd/wiki)
+- [eBUS Adapter Shield v5](https://adapter.ebusd.eu/v5/)
+- [A xxxxxx Node-RED](https://noderedguide.com/nr-lecture-1/)
+- [MQTT beginner’s guide](https://www.u-blox.com/en/blogs/insights/mqtt-beginners-guide#:~:text=MQTT%20is%20a%20publish%2Dand,topics%20handled%20by%20a%20broker.)
+- [Why XXXXX](https://www.xxxxxiner.io/why-portainer)
+
