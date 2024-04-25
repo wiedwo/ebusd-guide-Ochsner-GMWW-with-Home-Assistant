@@ -3,6 +3,7 @@
 This repository describes how to setup a infrastructure to control a eBUS based heating pump, **in this case:**
  - **Ochsner GMWW 11 plus (OTE3)** (smaller and bigger models may also work)
  - **Home Assistant** (Open source home automation that runs on a Raspberry Pi or a local server)
+ - **Step by step guide** (designed to help beginners to get their eBUSd adapter up and running in a reasonable amount of time)
 
 You can setup the same for every other eBUS based heating pump, the only difference are the ebusd specific configurations.
 
@@ -55,7 +56,7 @@ and connected to the router via ethernet** This can also be done with onboard Wi
   
     ***PUTTY***  [PUTTY Download](https://putty.org/)
 
-### Home Assistant (HA) on Raspberry Pi
+## Home Assistant (HA) on Raspberry Pi
 
 #### It is highly recommended to have sufficient knowledge how to install and operate Home Assistant prior to install and operate ebusd !! 
 Within the Raspberry Pi, the Home Assistant host is running to manage and isolate different software components using internal(!) containers. So no knowledge about
@@ -74,12 +75,12 @@ The following Add-On's must be installed:
 - Node-RED: Can be used, but not needed here (programming tool to create automation flows).
 - Portainer: Can be used, but not needed here (management tool to manage the internal Docker containers).
 
-### Network Connections
+## Network Connections
 
 The Raspberry Pi and the eBus Adapter both connect to the network through the Router, enabling remote access and control. This setup allows for monitoring and managing the heating system from a networked computer or a smart device.
 Home Assistant communicates with each other and with external devices through the MQTT Broker and eBus Adapter, creating a robust and flexible control system for the heating pump.
 
-## Step by step guide
+# Step by step guide
 
 The following steps provide a step by step guide to setup such an environment from scratch.
 
@@ -92,7 +93,7 @@ The following steps provide a step by step guide to setup such an environment fr
 7) [Adjust ebusd](./docs/ebusd.md)
 8) [Create Home Assistant dashboard](./docs/home_assistant_dashboard.md)
 
-
+#
 
 #### Helpful links
 
