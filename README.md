@@ -44,6 +44,7 @@ and connected to the router via ethernet** This can also be done with Wifi, but 
 
 - **Heating Pump:** The primary device responsible for circulating heat transfer fluid throughout the heating system.
 - **eBus Adapter:** An interface device that enables communication between the heating pump and the Raspberry Pi.
+    [eBUS Adapter](https://adapter.ebusd.eu/)
 - **Router:** A network device that facilitates data communication between the Raspberry Pi, the eBus Adapter, and potentially other networked devices.
 - **Home Assistant on Raspberry Pi** (or other Hardware): A compact computer that hosts a Home Assistant environment and serves as the brain of the system. It uses the eBus Adapter to interface with the heating pump.
 
