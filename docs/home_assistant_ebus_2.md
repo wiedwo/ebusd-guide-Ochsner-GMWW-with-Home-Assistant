@@ -48,5 +48,9 @@ s6-rc: info: service legacy-services successfully started
 2024-04-25 18:29:21.539 [mqtt info] received set topic for heating Fusspunkt Vorlauftemp. Heizen 03-001
 2024-04-25 18:29:21.539 [bus info] send message: 311006230603810048f000
 ```
-  
+
+**proceed with next step** 
+#
+**[MQTT Explorer on Home Assistant](mqtt_explorer.md)**
+
 
