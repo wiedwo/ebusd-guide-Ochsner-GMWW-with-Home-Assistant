@@ -16,13 +16,18 @@ prior to use the configuration-file ``gmww10plus.csv`` for the first time.**
 Note: changing the names in ``gmww10plus.csv`` will create new sensor-names in Home Assistant !!
 
 ### Missing values
-Due to older/newer HW- and SW-versions it could be possible, that 
-
-
+Due to older/newer HW- and SW-versions it could be possible, that you get no values for some name fields.
 
 To find the correct address in your environment, you need to use the ebusd ``ebusctl grap result all decode`` command.
+To use the ebusctl command-line feature you have to connect to Home Assistant via SSH..
 
-1) To connect to the ebusd container via console go to the container in the portainer web UI and click the ``Exec Console`` and click ``Connect``.
+To connect to the (internal) ebusd container in Home Assistant you can use two different tools:
+1) Home Assistant "
+
+2) Putty
+
+
+via console go to the container in the portainer web UI and click the ``Exec Console`` and click ``Connect``.
 ![image](pictures/ebusd_console.png)
 2) Switch to your mapped volume via ``cd etc/ebusd/ochsner/``
 3) Run the ``ebusctl grap result all decode >> decode.all.txt`` to write the decode content into the ``etc/ebusd/ochsner/decode.all.txt`` file
