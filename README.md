@@ -1,6 +1,8 @@
-# Installation of eBbus adapter with Home Assistant eBUSd AddOn to use with a Ochsner GMWW 11 plus heat pump
+# Installation of eBus adapter with Home Assistant eBUSd AddOn to use with a Ochsner GMWW 11 plus heat pump
 
 This repo is a fork from : https://github.com/Lorilatschki/ebusd-guide
+This guide contains links to various websites. The operators themselves are responsible for their content.
+I do not receive any compensation or payment for any of these links.
 
 This repository describes how to setup a infrastructure to control a eBUS based heating pump, **in this case:**
  - **Ochsner GMWW 11 plus (OTE3)** (smaller and bigger models may also work)
@@ -40,13 +42,13 @@ graph LR
 The heating system is composed of several interconnected components that work together to control and monitor the heating pump. 
 The central control unit of this system is a Raspberry Pi with Home Assistant installed.
  
-**IMPORTANT NOTE: In this configuration the eBUS Adapter(v5) is NOT INSTALLED onto RPI4, it is installed inside the heating pump as standalone adapter
+**IMPORTANT NOTE: In this configuration the eBUS Adapter(v5) is NOT INSTALLED onto RPi4, it is installed inside the heating pump as standalone adapter
 and connected to the router via ethernet** This can also be done with onboard Wifi, but in my case WiFi was not stable enough.  
 
 ## Components
 
 - **Heating Pump:** The primary device responsible for circulating heat transfer fluid throughout the heating system.
-- **eBus Adapter:** An interface device that enables communication between the heating pump and the Raspberry Pi.
+- **eBus Adapter:** An interface device that enables communication between the heating pump and the Raspberry Pi. Buy it there.
     [eBUS Adapter](https://adapter.ebusd.eu/)
 - **Router:** A network device that facilitates data communication between the Raspberry Pi, the eBus Adapter, and potentially other networked devices.
 - **Home Assistant on Raspberry Pi** (or other Hardware): A compact computer that hosts a Home Assistant environment and serves as the brain of the system.
