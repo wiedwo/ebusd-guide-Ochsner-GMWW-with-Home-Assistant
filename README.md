@@ -89,7 +89,7 @@ The following steps provide a step by step guide to setup such an environment fr
 
 1) [Raspberry Pi and Home Assistant](./docs/home_assistant_pi4.md)
 2) [eBUS Adapter Shield v5](./docs/ebus_adapter.md)
-3) [Portainer](./docs/portainer.md)
-4) [MQTT](./docs/mqtt.md)
+3) [MQTT](./docs/mqtt.md)
 5) [ebusd](./docs/ebusd.md)
 6) [Node-RED](./docs/nodered.md)
+3) [Portainer](./docs/portainer.md)
