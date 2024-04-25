@@ -66,7 +66,7 @@ There is a Windows powershell script for printing out the eBUS-Ids and the corre
 Therefor follow the steps above until step 4 (download the decoded output file to your local computer) and execute the following [script](https://github.com/Lorilatschki/ebusd-ochsner/blob/main/scan_ebus_ids.ps1) in a Windows PowerShell environment:
 
 ```ps1
-.\scan_ebus_ids.ps1 PATH_TO_DECODED_FILE
+.\scan_ebus_ids.ps1 PATH_TO_DECODED_TXT_FILE
 ```
 The output looks similar to that:
 <details>
