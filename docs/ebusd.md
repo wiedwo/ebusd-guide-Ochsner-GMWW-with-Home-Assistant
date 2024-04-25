@@ -4,11 +4,12 @@
 
 For experienced users:
 
-
-
-In the configuration, you find the eBUS-ID next to each configuration row in the comments field.
+In the configuration, you find the eBUS-ID in the name field.
 #
-It has the format XX-XXX for instance the ``setpoint desired hotwater normal`` with id ``05-051``.
+It has the format XX-XXX for instance the ``Warmwassertemp. SOLL 05-051`` with id ``05-051``.
+The eBUS-ID can be found in the follwing Ochsner manual: "Bedienungsanleitung Wärmepumpenregler OTE 3/OTE 4".
+#
+In my configuration i used the german names, but it is no problem to change to english names. Do this
 
 
 
