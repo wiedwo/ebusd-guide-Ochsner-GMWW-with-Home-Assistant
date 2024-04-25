@@ -86,10 +86,10 @@ The following steps provide a step by step guide to setup such an environment fr
 2) [Raspberry Pi and Home Assistant](./docs/home_assistant_pi4.md)
 3) [eBUSd on Home Assistant on RPi4](./docs/home_assistant_ebusd.md)
 4) [MQTT Broker / MQTT Explorer](./docs/mqtt.md)
-5) [Start and check eBUSd](./dosc/home_assistant_ebus_2.md)
+5) [Start and check eBUSd](./docs/home_assistant_ebus_2.md
+6) [Start and check eBUSd](./docs/home_assistant_ebus_2.md)
 7) [ebusd](./docs/ebusd.md)
-8) [Node-RED](./docs/nodered.md)
-3) [Portainer](./docs/portainer.md)
+
 
 
 #### Helpful links
