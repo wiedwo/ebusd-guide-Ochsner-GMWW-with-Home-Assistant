@@ -58,7 +58,6 @@ w,,temperature.hotwater.normal.set,05-051 Setpoint desired hot water temperature
 ```
 9) change the address found in ``/config/ebusd-configuration/ochsner/1524849/15.24849.csv`` file and **override** the existing one
 10) In order to reload the configuration, you have to stop/start the ebusd AddOn.
-![image](pictures/portainer_recreate.png)
 
 ## Script for scanning decoded output
 
