@@ -87,7 +87,7 @@ The following steps provide a step by step guide to setup such an environment fr
 3) [eBUSd on Home Assistant on RPi4](./docs/home_assistant_ebusd.md)
 4) [MQTT Broker / MQTT Explorer](./docs/mqtt.md)
 5) [Start and check eBUSd](./docs/home_assistant_ebus_2.md
-6) [Start and check eBUSd](./docs/home_assistant_ebus_2.md)
+6) [Start and check eBUSd](./docs/mqtt_explorer.md)
 7) [ebusd](./docs/ebusd.md)
 
 
