@@ -16,11 +16,15 @@ The broker is at the heart of the system. It is responsible for receiving all me
 
 1) as integration inside Home Assistant
 [Home Assistant Addon MQTT Explorer new Version](https://community.home-assistant.io/t/addon-mqtt-explorer-new-version/603739)
-**OR**
 2) as App in your private PC/Workstation/MAC aso
 [MQTT Explorer Downloads](https://mqtt-explorer.com/)
 
 # Configure MQTT Explorer
+
+![image](pictures/mqtt_explorer.png)
+
+
+
 
 
 ```sh
