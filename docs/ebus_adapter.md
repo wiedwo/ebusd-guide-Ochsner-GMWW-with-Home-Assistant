@@ -11,8 +11,9 @@ void the warranty! Only do this if you are aware of the risk and accept it.***
 **How to wire the adapter with the heatpump ?**
 - Shut down the heat pump to avoid electric problems
 - Open the top cover of the heat pump
-- Follow the 2-wire cable from the control panel to the adapter
-- Connect your 2-wire cable in parallel with the adapter connector in question.
+- Follow the 2-wire cable from the control panel to the OTE adapter
+- Connect your 2-wire cable in parallel with the ote adapter connector in question.
+  ![image](pictures/ote_adapter.png)
 - Connect the USB-cable to power on the adapter
 - Power on the heat pump.
 
