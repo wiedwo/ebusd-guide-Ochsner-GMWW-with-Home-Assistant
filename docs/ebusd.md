@@ -69,10 +69,8 @@ Therefor follow the steps above until step 4 (download the decoded output file t
 .\scan_ebus_ids.ps1 PATH_TO_DECODED_TXT_FILE
 ```
 #
-**in case of authorization problems, goto**
-PC Settings => System => For Developers => Powershell => Allow Local PowerShell Scripts to Run => ON
+**in case of authorization problems, goto:** PC Settings => System => For Developers => Powershell => Allow Local PowerShell Scripts to Run => ON
 #
-
 The output (in PowerShell console) looks similar to that:
 <details>
   <summary>scan output</summary>
