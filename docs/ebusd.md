@@ -4,15 +4,19 @@
 
 For experienced users:
 
+### national language in gmww10plus.csv
+
 In the configuration, you find the eBUS-ID in the name field.
 #
 It has the format XX-XXX for instance the ``Warmwassertemp. SOLL 05-051`` with id ``05-051``.
 The eBUS-ID can be found in the follwing Ochsner manual: "Bedienungsanleitung Wärmepumpenregler OTE 3/OTE 4".
 #
-In my configuration i used the german names, but it is no problem to change to english names. Do this
+**In my configuration i used the german names, but it is no problem to change to english names, but it should be done
+prior to use the configuration-file ``gmww10plus.csv`` for the first time.**
+Note: changing the names in ``gmww10plus.csv`` will create new sensor-names in Home Assistant !!
 
-
-
+### Missing values
+Due to older/newer HW- and SW-versions it could be possible, that 
 
 
 
