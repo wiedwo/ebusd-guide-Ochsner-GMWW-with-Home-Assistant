@@ -21,14 +21,8 @@ void the warranty! Only do this if you are aware of the risk and accept it.***
 - Connect your pc to the WIFI access point with SSID "EBUS" (without password), which is started by the firmware after the first flashing
 - use your browser at http://192.168.4.1
 
-> The easi dashboard can be accessed via http://192.168.4.1
-
 ![image](pictures/easi1.png)
 
-The easiest way to make the settings is via network, e.g. via the WIFI access point with SSID "EBUS" (without password), which is started by 
-the firmware after the first flashing or after pressing+holding the button during boot (as long as the LEDs are fading). 
-
-
-Alternatively, the easi> interface can also be operated via a serial connection. This can be done, for example. with the firmware page as explained above, or with Putty, minicom or another terminal program to open the serial USB port (parameters don't matter). Then the easi> interface of the adapter appears, which has umpteen commands for configuration and testing. With "help" these are listed together with parameters. For the Ethernet option, it is recommended to use the initial configuration method described above, as the Ethernet interface must first be configured.
-At the same time, a still unconfigured firmware starts a WIFI access point with SSID "EBUS" without a password. If you connect to it, the most important settings can http://192.168.4.1 be easily made on the website.
-
+- define your network WiFi/Ethernet settings and reboot with new ip address
+  
+![image](pictures/easi2.png)
