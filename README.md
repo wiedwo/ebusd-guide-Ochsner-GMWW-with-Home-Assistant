@@ -5,7 +5,7 @@ This guide contains links to various websites. The operators themselves are resp
 I do not receive any compensation or payment for any of these links.
 
 This repository describes how to setup a infrastructure to control a eBUS based heating pump, **in this case:**
- - **Ochsner GMWW 11 plus (OTE3)** (smaller and bigger models may also work)
+ - **Ochsner GMWW 11 plus (OTE3)** (smaller and bigger GMWW models may also work)
  - **Home Assistant** (Open source home automation that runs on a Raspberry Pi or a local server)
  - **Step by step guide** (designed to help beginners to get their eBUSd adapter up and running in a reasonable amount of time)
 
