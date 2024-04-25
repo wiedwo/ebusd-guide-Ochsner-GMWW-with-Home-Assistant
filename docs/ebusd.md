@@ -31,12 +31,10 @@ To connect to the (internal) ebusd container in Home Assistant you can use two d
 ### ebusctl commands
 
 1) run ``docker exec -it $(docker ps -f name=ebusd -q) /bin/bash`` 
-#
-2) Run ``ebusctl grab`` and wait for at least 24 hours
-3) #
-4) Run ``ebusctl grab result all decode > /config/ebusd-configuration/grabd.txt`` to write the decode content into the ``/config/ebusd-configuration/grabd.txt`` file
-5) Open a file viewer e.g. notepad++ and search for the desired eBUS-ID
-7) Search for the eBUS-ID ``05-051`` and look for the TEM_P XXXX= prefix.
+2) run ``ebusctl grab`` and wait for at least 24 hours
+3) Run ``ebusctl grab result all decode > /config/ebusd-configuration/grabd.txt`` to write the decode content into the ``/config/ebusd-configuration/grabd.txt`` file
+4) Open a file viewer e.g. notepad++ and search for the desired eBUS-ID
+5) Search for the eBUS-ID ``05-051`` and look for the TEM_P XXXX= prefix.
 
 ```txt
 ...
@@ -44,28 +42,29 @@ TEM_P b342=05-051, 428d=26-066, 8d02=05-013, 0258=16-002, 5802=04-088, 0264=08-0
 ...
 ```
 
-7) Scroll upwards until you find a address block with the structure ``XXXXXXXXXXXXXXXXXX / XXXXXXXXXXXXXXXXXXXXXX``
+6) Scroll upwards until you find a address block with the structure ``XXXXXXXXXXXXXXXXXX / XXXXXXXXXXXXXXXXXXXXXX``
 
 ```txt
 ...
 31150621046580000e / 0ab3428d0258026400f401 = 9
 ...
 ```
-8) The final address are the last 8 characters of the first segment ``6580000e``
-9) Go to your config and change the address of the corresponding row
+7) The final address are the last 8 characters of the first segment ``6580000e``
+8) Go to your config and change the address of the corresponding row
 
 ```csv
 r1,,temperature.hotwater.normal.set,05-051 Setpoint desired hot water temperature,,,,6580000e,,,param,,,,,,tempt,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 w,,temperature.hotwater.normal.set,05-051 Setpoint desired hot water temperature,,,,6580000e,,,tempt,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ```
-10) Connect to your raspberry Pi and copy the config to the ``/home/pi/data/ebusd/ochsner`` folder and **override** the existing one
-11) In order to reload the configuration by ebusd, you can simply recreate the container through portainer by clicking the ``Recreate`` button. **It is not enough to stop and restrat the container!**
+9) change the address found in ``/config/ebusd-configuration/ochsner/1524849/15.24849.csv`` file and **override** the existing one
+10) In order to reload the configuration, you have to stop/start the ebusd AddOn.
 ![image](pictures/portainer_recreate.png)
 
 ## Script for scanning decoded output
 
-There is a script for printing out the eBUS-Ids and the corresponding addresses, which enables much faster address detection than searching manually.
-Therefor follow the steps until step 4 (download the decoded output file to your local computer) and execute the following [script](https://github.com/Lorilatschki/ebusd-ochsner/blob/main/scan_ebus_ids.ps1):
+There is a Windows powershell script for printing out the eBUS-Ids and the corresponding addresses, which enables much faster address detection than searching manually.
+
+Therefor follow the steps above until step 4 (download the decoded output file to your local computer) and execute the following [script](https://github.com/Lorilatschki/ebusd-ochsner/blob/main/scan_ebus_ids.ps1) in a Windows PowerShell environment:
 
 ```ps1
 .\scan_ebus_ids.ps1 PATH_TO_DECODED_FILE
