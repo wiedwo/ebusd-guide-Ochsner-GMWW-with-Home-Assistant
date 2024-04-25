@@ -60,7 +60,7 @@ and connected to the router via ethernet** This can also be done with Wifi, but 
 Within the Raspberry Pi, the Home Assistant host is running to manage and isolate different software components using internal(!) containers. So no knowledge about
 container necesssary!
 The software components in HA are called Add-On's or integrations.
-The following Add-On's must be installed and running:
+The following Add-On's must be installed:
 
 - **ebusd:** A daemon for handling communication with eBus devices like the heating pump. It interfaces with the eBus Adapter to control and monitor the pump.
     [Home Assistant eBUSd](https://www.home-assistant.io/integrations/ebusd/)
