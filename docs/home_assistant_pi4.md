@@ -4,10 +4,34 @@ By following the [getting started](https://www.home-assistant.io/installation/ra
 **You should wire it with a ethernet cable directly to router/switch.**
 
 ## Install eBUSd AddOn in Home Assistant
+- Goto Home Assistant Settings => Add-ons => ADD-On Store => search eBUSd => install
+
+## create an ebusd configuration directory in Home Assistant
+- /config/ebusd-configuration/
+- /config/ebusd-configuration/ochsner
+- copy mqtt-hassio.cfg to /config/ebusd-configuration/
+
+## Configure eBUSd AddOn in Home Assistant
 
 - Goto Home Assistant Settings => Add-ons => ADD-On Store => search eBUSd => install
 - goto to Configuration and use following YAML-Code to setup eBUSd:
 
+```sh
+scanconfig: true
+loglevel_all: info
+mqtttopic: ebusd
+mqttint: /config/ebusd-configuration/mqtt-hassio.cfg
+mqttjson: true
+mode: ens
+network_device: 192.168.178.68:9999
+latency: 40
+pollinterval: 10
+configpath: /config/ebusd-configuration/ochsner/1524849
+accesslevel: "*"
+http: false
+mqttvar: "\"filter-name=\""
+mqttretain: false
+```
 - 
 Here is a [Install Docker on Raspberry Pi](https://www.simplilearn.com/tutorials/docker-tutorial/raspberry-pi-docker) guide you can follow.
 
