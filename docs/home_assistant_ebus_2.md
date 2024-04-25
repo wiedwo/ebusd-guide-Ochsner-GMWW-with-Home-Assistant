@@ -1,6 +1,6 @@
 # Start eBUSd on Home Assistant
 
-## Install and configure eBUSd AddOn in Home Assistant
+## Start and check eBUSd AddOn in Home Assistant
 - Goto Home Assistant Settings => Add-ons => eBUSd => start
 
 ## Check protocol
@@ -49,9 +49,4 @@ s6-rc: info: service legacy-services successfully started
 2024-04-25 18:29:21.539 [bus info] send message: 311006230603810048f000
 ```
   
-## Check mqtt-hassio.cfg 
-- check 'network_device:' and 'configpath:'
 
-**proceed with next step** 
-#
-**[MQTT on Home Assistant](mqtt.md)**
