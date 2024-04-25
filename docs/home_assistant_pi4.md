@@ -62,9 +62,7 @@ s6-rc: info: service legacy-services successfully started
 2024-04-25 18:29:21.524 [mqtt notice] connection established
 2024-04-25 18:29:21.539 [mqtt info] received set topic for heating Fusspunkt Vorlauftemp. Heizen 03-001
 ```
-- after checking 'network_device:' and 'configpath:' start eBUSd AddOn
-
-
+-----------------------------------------------------
 
 Here is a [Install Docker on Raspberry Pi](https://www.simplilearn.com/tutorials/docker-tutorial/raspberry-pi-docker) guide you can follow.
 
