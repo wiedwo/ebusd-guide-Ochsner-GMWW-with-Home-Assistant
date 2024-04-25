@@ -1,26 +1,20 @@
-# eBUSd
-
-**eBUSd**(eamon) is a daemon for handling communication with eBUS devices connected to a 2-wire bus system ("energy bus" used by numerous heating systems).
-
-
-
-
-## ebusd configuration
-
-Copy the configuration from https://github.com/Lorilatschki/ebusd-ochsner/tree/main/configuration/ochsner to you ``/home/pi/data/ebusd/ochsner``.
-You can use every ssh tool for that, I prefer [FileZilla](https://filezilla-project.org/download.php?platform=win64).
-
-You can create the ebusd container though the following script. The ports may depend on your system.
-
-```sh
-docker run --name ebusd --restart=always -p 8888:8888 -p 8080:8080 john30/ebusd -d enh:IP_ADDRESS_EBUS_ADAPTER:9999 --latency=10 --configpath=/etc/ebusd/ochsner --pollinterval=5 --mqtthost=IP_ADDRESS_RASPBERRY_PI --mqttport=1883
-```
-
-The ``IP_ADDRESS_EBUS_ADAPTER`` need to be replaced by the IP of your eBUS adapter. The ``IP_ADDRESS_RASPBERRY_PI`` need to be replaced by the IP of your raspberry Pi.
+# eBUSd Adjustments
 
 ## Adapting ebusd configuration
 
-The addresses used for my heading pump might not fit yours. In the configuration, you find the eBUS-ID next to each configuration row in the comments field. It has the format XX-XXX for instance the ``setpoint desired hotwater normal`` with id ``05-051``.
+For experienced users:
+
+
+
+In the configuration, you find the eBUS-ID next to each configuration row in the comments field.
+#
+It has the format XX-XXX for instance the ``setpoint desired hotwater normal`` with id ``05-051``.
+
+
+
+
+
+
 To find the correct address in your environment, you need to use the ebusd ``ebusctl grap result all decode`` command.
 
 1) To connect to the ebusd container via console go to the container in the portainer web UI and click the ``Exec Console`` and click ``Connect``.
