@@ -2,8 +2,7 @@
 
 If you get problems to see values in MQTT, go back to the eBUS Adapter and do following checks:
 
-nterference with the heat pump may 
-void the warranty! Only do this if you are aware of the risk and accept it.***
+![image](pictures/easiote_adapter.png)
 
 **How to wire the adapter with the heatpump ?**
 - Shut down the heat pump to avoid electric problems
