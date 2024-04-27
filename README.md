@@ -27,11 +27,9 @@ graph LR
                 NodeRed[Node-RED]  
                 Ebusd[ebusd]  
                 MqttBroker[MQTT Broker]  
-                Portainer[internal Portainer]
+                Portainer[HomeAssistant]
                 Docker -->|communicates with| Adapter 
             end  
-  
-            NodeRed -->|publishes/subscribes| MqttBroker  
             Ebusd -->|publishes/subscribes| MqttBroker  
             Portainer -->|manages| Docker  
         end  
