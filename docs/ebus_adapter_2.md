@@ -1,23 +1,17 @@
 # Check Connection eBUS Adapter with heat pump
 
-If you get problems to see values in MQTT, go back to the eBUS Adapter and do following checks:
+If you get problems in HA eBUSd protocol or you can't see values in MQTT, go back to the eBUS Adapter and do following checks:
 
-![image](pictures/easiote_adapter.png)
+![image](pictures/easi3.png)
 
-**How to wire the adapter with the heatpump ?**
-- Shut down the heat pump to avoid electric problems
-- Open the top cover of the heat pump
-- Follow the 2-wire cable from the OCHSNER front control panel to the OTE adapter
-- Connect your 2-wire cable in parallel with the OTE adapter connector in question
-  (***Maybe 40, but CHECK CAREFULLY!***)
-  ![image](pictures/easiote_adapter.png)
-- Connect the USB-cable to power on the eBUS adapter
-- Power on the heat pump.
+1) update Firmware to newest level and reboot adapter
+2) confirm there is a connection to the Home assistant eBUSd AddOn
+3) confirm the adapter is receiving signals from the bus
 
 
-**Some things won't work at this point, but the network connection needs to work**
+**If there are problems here, solve these problems first, otherwise there is no point in trying the next steps**
 #
-**Don't worry, proceed with next step** 
+**After all problems solved, proceed with next step** 
 #
 **[Home Assistant on RPi4](home_assistant_pi4.md)**
 
