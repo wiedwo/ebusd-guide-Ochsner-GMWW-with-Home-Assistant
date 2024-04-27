@@ -159,4 +159,4 @@ To verify if you can change a writable eBUS address, you must append ``/set`` to
 
 **proceed with next step** 
 #
-**[Create Home Assistant dashboard](home_assistant_dsashboard.md)**
+**[Create Home Assistant dashboard](home_assistant_dashboard.md)**
