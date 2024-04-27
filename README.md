@@ -63,8 +63,8 @@ and connected to the router via ethernet** This can also be done with adapter on
 ## Home Assistant (HA) on Raspberry Pi
 
 #### It is highly recommended to have sufficient knowledge how to install and operate Home Assistant prior to install and operate ebusd !! 
-Within the Raspberry Pi, the Home Assistant host is running to manage and isolate different software components using internal(!) containers. So no knowledge about
-container necesssary!
+Within the Raspberry Pi, the Home Assistant host is running to manage and isolate different software components using internal(!) containers. **You don't need
+knowledge about container handling!**
 The software components in HA are called Add-On's or integrations.
 The following Add-On's must be installed:
 
