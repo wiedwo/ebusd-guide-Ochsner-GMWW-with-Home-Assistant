@@ -94,9 +94,10 @@ The following steps provide a step by step guide to setup such an environment fr
 4) [MQTT Broker / MQTT Explorer](./docs/mqtt.md)
 5) [Start and check eBUSd](./docs/home_assistant_ebus_2.md)
 6) [Inspect MQTT Explorer](./docs/mqtt_explorer.md)
-7) [Adjust ebusd](./docs/ebusd.md)
-8) [Create Home Assistant dashboard](./docs/home_assistant_dashboard.md)
-9) [ebusctl commands](./docs/ebusctl_commands.md)
+7) [Verify eBUS Adapter connection to heatpump](./dosc/ebus_adapter_2.md)
+8) [Adjust ebusd](./docs/ebusd.md)
+9) [Create Home Assistant dashboard](./docs/home_assistant_dashboard.md)
+10) [ebusctl commands](./docs/ebusctl_commands.md)
 
 #
 
