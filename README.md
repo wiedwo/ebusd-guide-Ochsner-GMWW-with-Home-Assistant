@@ -25,13 +25,14 @@ graph LR
         subgraph Raspberry Pi  
             subgraph Home Assistant  
                 NodeRed[Node-RED]  
-                Ebusd[ebusd]  
+                ebusd[ebusd]  
                 MqttBroker[MQTT Broker]  
                 Portainer[HomeAssistant]
+                Portainer -->|manages| ebusd
                 Docker -->|communicates with| Adapter 
             end  
-            Ebusd -->|publishes/subscribes| MqttBroker  
-            Portainer -->|manages| Docker  
+            ebusd -->|publishes/subscribes| MqttBroker  
+            Portainer -->|manages| Docker
         end  
     end  
 
