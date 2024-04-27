@@ -1,6 +1,4 @@
-# Install eBUSd on Home Assistant
-
-## Install and configure eBUSd AddOn in Home Assistant
+# Configure eBUSd AddOn in Home Assistant
 - Goto Home Assistant Settings => Add-ons => eBUSd => configuration
 -  use ha_ebusd_config.yaml as a template, but (if possible) avoid to change mqttint: and configpath:
   
