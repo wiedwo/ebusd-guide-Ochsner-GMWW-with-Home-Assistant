@@ -12,7 +12,8 @@ It has the format XX-XXX for instance the ``Warmwassertemp. SOLL 05-051`` with i
 The eBUS-ID can be found in the follwing Ochsner manual: "Bedienungsanleitung Wärmepumpenregler OTE 3/OTE 4".
 
 **In my configuration i used the german names, but it is no problem to change to english names, but it should be done
-prior to use the configuration-file ``15.24849.csv`` for the first time.**
+prior to use the configuration-file ``15.24849.csv`` for the first time.** (remember gmww11plus.csv was renamed to
+15.24849.csv in a prior step)
 
 Note: changing the names in ``15.24849.csv`` will create new (duplicate) sensor-names in Home Assistant !!
 #
