@@ -1,8 +1,8 @@
 # Check Connection eBUS Adapter with heat pump
 
-If you get problems to see values in MQTT. go back  
+If you get problems to see values in MQTT, go back to the eBUS Adapter and do following checks:
 
-***Attention: the following description of the connection to my heat pump is without any warranty. Any interference with the heat pump may 
+nterference with the heat pump may 
 void the warranty! Only do this if you are aware of the risk and accept it.***
 
 **How to wire the adapter with the heatpump ?**
