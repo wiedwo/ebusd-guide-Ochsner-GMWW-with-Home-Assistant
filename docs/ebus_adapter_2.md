@@ -13,5 +13,5 @@ If you get problems in HA eBUSd protocol or you can't see values in MQTT, go bac
 #
 **After all problems solved, proceed with next step** 
 #
-**[Home Assistant on RPi4](home_assistant_pi4.md)**
+**[eBUSd Adjustments](ebusd.md)**
 
