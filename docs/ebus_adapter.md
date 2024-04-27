@@ -24,9 +24,9 @@ void the warranty! Only do this if you are aware of the risk and accept it.***
 - use your browser at http://192.168.4.1
 
 ![image](pictures/easi1.png)
-
-- define your network WiFi/Ethernet settings and reboot with new ip address
-  
+#
+- **define your network WiFi/Ethernet settings and reboot with new ip address**
+#  
 ![image](pictures/easi2.png)
 
 **Some things won't work at this point, but the network connection needs to work**
