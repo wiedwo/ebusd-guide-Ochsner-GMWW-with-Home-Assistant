@@ -8,4 +8,4 @@
 
 **Then proceed with next step** 
 #
-**[eBUSd Adjustments](ebus_adapter_2.md)**
+**[eBUSd adapter check](ebus_adapter_2.md)**
