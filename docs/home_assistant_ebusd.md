@@ -13,7 +13,7 @@
 - rename gmww11plus.csv to 15.24849.csv
   
 ## Check mqtt-hassio.cfg 
-- check 'network_device:' and 'configpath:'
+- check 'network_device:'
 
 **proceed with next step** 
 #
