@@ -1,7 +1,8 @@
 # Configure eBUSd AddOn in Home Assistant
 - Goto Home Assistant Settings => Add-ons => eBUSd => configuration
 -  use ha_ebusd_config.yaml as a template, but (if possible) avoid to change mqttint: and configpath:
-  
+-  do not start eBUSd yet!!
+    
 ## Create an ebusd configuration directory in Home Assistant
 - create directory /config/ebusd-configuration
 - create directory /config/ebusd-configuration/ochsner
