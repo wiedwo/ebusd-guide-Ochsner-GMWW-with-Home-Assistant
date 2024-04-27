@@ -5,7 +5,8 @@ You should wire it with a ethernet cable directly to router/switch.
 
 ## Install and configure eBUSd AddOn in Home Assistant
 - Goto Home Assistant Settings => Add-ons => ADD-On Store => search eBUSd => install
-- use ha_ebusd_config.yaml as a template  
+- use can use ha_ebusd_config.yaml as a template, but (if possible)avoid to change mqttint: and configpath:
+  
 ## Install and configure other AddOns and Integrations (only if not yet done)
 
 - **MQTT Broker:** A message broker that supports the MQTT protocol. It allows for efficient and reliable communication between Home Assistant and ebusd AddOn.
