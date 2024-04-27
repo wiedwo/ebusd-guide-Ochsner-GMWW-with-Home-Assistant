@@ -15,6 +15,7 @@ The eBUS-ID can be found in the follwing Ochsner manual: "Bedienungsanleitung WÃ
 prior to use the configuration-file ``15.24849.csv`` for the first time.**
 
 Note: changing the names in ``15.24849.csv`` will create new (duplicate) sensor-names in Home Assistant !!
+#
 
 ### Missing values
 Due to older/newer HW- and SW-versions it could be possible, that you get no values for some name fields.
