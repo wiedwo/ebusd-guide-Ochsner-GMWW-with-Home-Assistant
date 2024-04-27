@@ -4,8 +4,8 @@
 
 ![image](pictures/mqtt_explorer_1.png)
 
-**If no topics appear in mqtt explorer, the previous points must be checked again !! **
+**If no topics appear in mqtt explorer, check all previous points.**
 
-**proceed with next step** 
+**Then proceed with next step** 
 #
-**[eBUSd Adjustments](ebusd.md)**
+**[eBUSd Adjustments](ebus_adapter_2.md)**
