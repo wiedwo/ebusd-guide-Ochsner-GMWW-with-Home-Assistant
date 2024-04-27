@@ -2,7 +2,8 @@
 
 ## Install and configure eBUSd AddOn in Home Assistant
 - Goto Home Assistant Settings => Add-ons => ADD-On Store => search eBUSd => install
-
+- Goto Home Assistant Settings => Add-ons => eBUSd => configuration
+- 
 ## Create an ebusd configuration directory in Home Assistant
 - create directory /config/ebusd-configuration
 - create directory /config/ebusd-configuration/ochsner
