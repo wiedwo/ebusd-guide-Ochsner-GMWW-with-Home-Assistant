@@ -1,4 +1,4 @@
-# Installation of eBus adapter with Home Assistant eBUSd AddOn to use with a Ochsner GMWW 11 plus heat pump
+# Installation of eBus adapter with Home Assistant eBUSd AddOn to use with a "Ochsner GMWW 11 plus" heat pump
 
 This repo is a fork from : https://github.com/Lorilatschki/ebusd-guide
 This guide contains links to various websites. The operators themselves are responsible for their content.
