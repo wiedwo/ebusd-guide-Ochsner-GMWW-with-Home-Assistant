@@ -12,7 +12,7 @@ You should wire it with a ethernet cable directly to router/switch.
     [Home Assistant MQTT](https://www.home-assistant.io/integrations/mqtt)
 - **Advanced SSH & Web Terminal** (to enter HA command-line via SSH)
     [Home Assistant Community Add-on](https://github.com/hassio-addons/addon-ssh)
-    ![image](pictures/easi3.png)
+    ![image](pictures/advanced_ssh&web_terminal.png)
 - **Studio Code Server** or **File editor** (to edit configuration files and watch log files aso)
     [Home Assistant Community Add-on](https://github.com/hassio-addons/addon-vscode)
 
