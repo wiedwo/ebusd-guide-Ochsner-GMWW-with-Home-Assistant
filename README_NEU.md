@@ -2,10 +2,13 @@
 
 # ebusd-ochsner
 
-This repository describes how to setup a infrastructure to control a eBUS based heating pump,**here mainly for Ochsner heat pumps with OTE3**. 
+This repository describes how to setup a infrastructure to control a eBUS based heating pump, here especially for
+> Ochsner heat pumps with OTE3.
 
 The setups may be the same for every other eBUS based heating pump, the only difference are the ebusd specific configurations.
 
+There are many different ways to install the ebus adapter in your own hardware and software environment. 
+For this reason, different folders were created for the different configurations tested by the author's.
 
 
 
