@@ -18,7 +18,7 @@ You can setup the same for every other eBUS based heating pump, the only differe
 graph LR  
     subgraph Heating System  
         Pump[Heating Pump] -->|controls| Adapter[eBus Adapter]  
-        Pi[Raspberry Pi] -->|uses| Adapter  
+        Pi[Raspberry Pi Home Assistant] -->|uses| Adapter  
         Router[Router] -->|network connection| Pi  
         Router -->|network connection| Adapter  
         
