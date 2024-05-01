@@ -4,14 +4,13 @@ This repo is a fork from : https://github.com/Lorilatschki/ebusd-guide
 This guide contains links to various websites. The operators themselves are responsible for their content.
 I do not receive any compensation or payment for any of these links.
 
-For other Hard- and Software-Enviroments see the repos of [Uwe](https://github.com/cybersmart-eu/ebusd-ochsner) and [Lori](https://github.com/Lorilatschki/ebusd-guide) .
-
 **This repository** describes how to setup a infrastructure to control a eBUS based heating pump with following parts:
 
  - **Ochsner GMWW 11 plus (OTE3)** (smaller and bigger GMWW models may also work)
  - **Home Assistant** (Open source home automation that runs on a Raspberry Pi or a local server)
  - **Step by step guide** (designed to help beginners to get their eBUSd adapter up and running in a reasonable amount of time)
 
+For other Hard- and Software-Enviroments see the repos of [Uwe](https://github.com/cybersmart-eu/ebusd-ochsner) and [Lori](https://github.com/Lorilatschki/ebusd-guide) .
 You can setup the same for every other eBUS based heating pump, the only difference are the ebusd specific configurations.
 
 ## Component overview
