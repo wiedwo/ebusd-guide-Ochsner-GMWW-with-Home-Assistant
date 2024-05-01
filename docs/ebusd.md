@@ -25,14 +25,15 @@ To find the correct address in your environment, you need to use the ebusd ``ebu
 To use the ebusctl command-line feature you have to connect to Home Assistant via SSH.
 
 To connect to the (internal) ebusd container in Home Assistant you can use two different tools:
-1) Home Assistant "Advanced SSH & Web Terminal"
+**1) Home Assistant "Advanced SSH & Web Terminal"**
+
+![image](pictures/advanced_ssh&web_terminal.png)
+ 
+**2) Putty**
 
 ![image](pictures/putty_conf.png)
- 
-3) Putty
 
-![image](pictures/putty_conf.png)
- 
+
 ### ebusctl commands
 
 1) run ``docker exec -it $(docker ps -f name=ebusd -q) /bin/bash`` 
