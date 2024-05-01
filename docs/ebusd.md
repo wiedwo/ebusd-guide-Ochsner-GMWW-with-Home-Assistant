@@ -27,7 +27,10 @@ To use the ebusctl command-line feature you have to connect to Home Assistant vi
 To connect to the (internal) ebusd container in Home Assistant you can use two different tools:
 1) Home Assistant "Advanced SSH & Web Terminal"
 
-2) Putty
+![image](pictures/putty_conf.png)
+ 
+3) Putty
+
 ![image](pictures/putty_conf.png)
  
 ### ebusctl commands
