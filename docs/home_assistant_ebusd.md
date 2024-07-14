@@ -14,7 +14,9 @@
   
 ## Check mqtt-hassio.cfg 
 - check 'network_device:'
-
+- important note : for including writable messages, use this line or overwrite with '--mqttvar=filter-direction=r|u|^w'.
+  # filter-direction = r|u|^w
+  
 **proceed with next step** 
 #
 **[MQTT on Home Assistant](mqtt.md)**
