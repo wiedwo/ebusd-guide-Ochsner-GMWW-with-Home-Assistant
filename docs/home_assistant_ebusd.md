@@ -14,8 +14,7 @@
   
 ## Check mqtt-hassio.cfg 
 - check 'network_device:'
-- important note :
-  for including writable messages, use change the line or overwrite with '--mqttvar=filter-direction=r|u|^w'.
+- important note : for including writable messages, use change the line or overwrite with '--mqttvar=filter-direction=r|u|^w'.
   filter-direction = r|u|^w
   
 **proceed with next step** 
