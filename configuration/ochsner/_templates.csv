@@ -45,7 +45,6 @@ param,command;maxs;mins,,,Parameter
 param1,command;maxs;HEX,,,Parameter
 param2,command;maxs,,,Parameter
 tempt:temperature,SIN,10,°C,Temperatur
-tempt1:temperature,SIN,,°C,Temperatur
 humidity,UIN,,%,
 percent100:percent,SIN,100,%,
 #status,UCH,,,
@@ -65,3 +64,4 @@ hours,HCD:3,,h,
 lmin,UIN,10,L/min,	
 cycles,HCD,,,
 err:errname,UCH,90=HEAT_PUMP,,
+wtime,HTI,,,time
