@@ -45,6 +45,7 @@ param,command;maxs;mins,,,Parameter
 param1,command;maxs;HEX,,,Parameter
 param2,command;maxs,,,Parameter
 tempt:temperature,SIN,10,°C,Temperatur
+tempt2:temperature,SIN,1,°C,Temperatur
 humidity,UIN,,%,
 percent100:percent,SIN,100,%,
 #status,UCH,,,
