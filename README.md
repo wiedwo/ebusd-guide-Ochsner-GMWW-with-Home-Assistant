@@ -4,6 +4,8 @@ This repo is a fork from : https://github.com/Lorilatschki/ebusd-guide
 This guide contains links to various websites. The operators themselves are responsible for their content.
 I do not receive any compensation or payment for any of these links.
 
+**19.02.2026: Configuration gmww11plus.csv , broadcast.csv and _templates.csv updated**
+
 **This repository** describes how to setup a infrastructure to control a eBUS based heating pump with following parts:
 
  - **Ochsner GMWW 11 plus (OTE3)** (smaller and bigger GMWW models may also work)
