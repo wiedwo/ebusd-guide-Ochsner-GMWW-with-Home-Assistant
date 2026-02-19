@@ -17,7 +17,8 @@ percent,D2C,,%,
 percent0:percent,UCH,,%,
 percent1:percent,D1C,,%,
 percent2:percent,D2B,,%,
-spercent:percent,SCH,,%,
+percent:percent,SCH,,%,
+percent100:percent,SIN,100,%,
 temp:temperature,D2C,,°C,Temperatur
 temp0:temperature,UCH,,°C,Temperatur
 temp1:temperature,D1C,,°C,Temperatur
@@ -47,7 +48,6 @@ param2,command;maxs,,,Parameter
 tempt:temperature,SIN,10,°C,Temperatur
 tempt2:temperature,SIN,1,°C,Temperatur
 humidity,UIN,,%,
-percent100:percent,SIN,100,%,
 #status,UCH,,,
 hkbetrieb:status,UCH,0=Standbybetrieb;1=Automatik;4=Normalbetrieb;5=Sparbetrieb;7=Handbetrieb Heizen,,
 #statusheatpump:status,UCH,0=Switched off;1=Heating mode;2=Lead time heating mode;3=Externally blocked;4=Cooling mode;5=Lead time cooling mode;6=Lead time de-icing mode;7=De-icing mode;8=Error;9=Drain off;10=De-icing blocking time;11=De-icing pre heat;12=De-icing 1;13=De-icing 2;14=De-icing 3;15=Alarm;16=Malfunction;17=Blocked;21=Flow temperature too high or too low;22=Switching hysteresis in heat pump manual operation exceeded;23=Heat source input temperature too high;24=Heat source outlet temperature to low;25=TKAmin Abschaltung;26=Bivalent switch-off;27=Warmwasser Ladesperre;28=Minimum off time;29=Minimum run time,,
@@ -57,6 +57,8 @@ hkstatus:status,UCH,0=Abgeschaltet;1=Heizbetrieb;3=Spar Heizbetrieb;4=Frostschut
 #statusboiler:status,UCH,0=Switched off;1=Normal charge mode;2=Comfort charge mode - Legionella protection;5=Fault;8=Economy charge mode - Energy saving;10=Electric recharging;11=Charge aborted,,
 wwstatus:status,UCH,0=Abgeschaltet;1=Normal Ladebetrieb;2=Komfort Ladebetrieb;5=Stoerung;8=Spar Ladebetrieb;10=Elektro Nachladung;11=Ladungsabbruch,,
 kpstatus:status,UCH,0=Aus;1=Ein,,
+modehotwater:status,UCH,0=Keine Ladung;1=Automatik;2=Normaltemperatur,,
+wpbetrieb:status,UCH,0=Aus;1=Automatik,,
 volume,UIN,10,,
 kwh,UIN,10,kW/h,
 mwh,UIN,,MW/h,
@@ -66,3 +68,10 @@ lmin,UIN,10,L/min,
 cycles,HCD,,,
 err:errname,UCH,90=HEAT_PUMP,,
 wtime,HTI,,,time
+#
+tp_2h,BI0;BI1;BI2;BI3;BI4;BI5;BI6;BI7,,,Zeitprogramm 2 Stunden
+tp_8h,tp_2h;tp_2h;tp_2h;tp_2h,,,Zeitprogramm 8 Stunden
+tp_20h,tp_2h;tp_2h;tp_2h;tp_2h;tp_2h;tp_2h;tp_2h;tp_2h;tp_2h;tp_2h,,,Zeitprogramm 20 Stunden
+tp_mode,UCH;UCH;UCH;UCH;UCH;UCH;UCH;UCH;UCH;IGN:1,,,Modus Zeitprogramm
+tp_week,tp_20h;tp_20h;tp_20h;tp_20h;tp_20h;tp_20h;tp_20h;tp_20h;tp_8h,,,Zeitprogramm Woche
+tp_all,tp_mode;tp_20h;tp_20h;tp_20h;tp_20h;tp_20h;tp_20h;tp_20h;tp_20h;tp_8h,,,Zeitprogramm komplett
