@@ -1,77 +1,88 @@
-# template name,type / templates,divider / values,unit,comment
-#ebus specification types:,,,,
-cntstarts,BCD:3,,,Anlaufzähler
-cntminutes,BCD,,min,Betriebsstunden
-cnthours,BCD:3,,h,Betriebsstunden
-cntfuel,BCD:4,,,Brennstoffmenge
-unit,UCH,0=all;1=l;2=m³,,Einheit
-fueltype,UCH,0=any;1=oil;2=gas,,Brennstoffart
-countertype,UCH,0=starts;1=hours 1;2=hours 2;3=hours 3;4=hours 4;5=modulation;16=amount,,Zählerart
-opdatacyclic,UCH,0x55=stop;0xaa=start,,zyklische Übertragung
-opdatatransfer,UCH,0=stop;1=cyclic;2=event;3=single;3=cyclic and event,,Übertragung
-opdataheat,UCH,0x00=off;0x01=none;0x55=hotwater;0xaa=heating;0xcc=emissioncheck;0xdd=tüv;0xee=controlstop;0x66=hotwater in controlstop;0xbb=hotwater in heating;0xee=controlstop in stage,,Wärmeanforderung
-opdataaction,UCH,0x00=none;0x01=stop pump;0x02=start pump;0x03=stop consumer;0x04=start consumer,,
-desiredtemp:temperature,UCH,,°C,Solltemperatur
-outsidetemp:temperature,SCH,,°C,Außentemperatur
-percent,D2C,,%,
-percent0:percent,UCH,,%,
-percent1:percent,D1C,,%,
-percent2:percent,D2B,,%,
-percent:percent,SCH,,%,
-percent100:percent,SIN,100,%,
-temp:temperature,D2C,,°C,Temperatur
-temp0:temperature,UCH,,°C,Temperatur
-temp1:temperature,D1C,,°C,Temperatur
-temp2:temperature,D2B,,°C,Temperatur
-temp3:temperature,D1B,,°C,Temperatur
-press:pressure,D2B,,bar,Druck
-btime:time,BTI,,,Uhrzeit
-bdate:date,BDA,,,Datum
-id,STR:5,,,Geräte-ID
-version,PIN,,,Version
-skip,IGN:1,,,
-,,,,
-#Ochsner types:,,,,
-group,UCH,,,Gruppe
-value,BI0:7,,,Wert
-type,HEX,,,Datentyp
-#unit,HEX,,,Einheit
-unit,UCH,0x02=°C,,Einheit
-maxu:max,UIN,,,Maximum
-minu:min,UIN,,,Minimum
-maxs:max,SIN,10,,Maximum
-mins:min,SIN,10,,Minimum
-command,group;value;type;unit,,,Kommando
-param,command;maxs;mins,,,Parameter
-param1,command;maxs;HEX,,,Parameter
-param2,command;maxs,,,Parameter
-tempt:temperature,SIN,10,°C,Temperatur
-tempt2:temperature,SIN,1,°C,Temperatur
-humidity,UIN,,%,
-#status,UCH,,,
-hkbetrieb:status,UCH,0=Standbybetrieb;1=Automatik;4=Normalbetrieb;5=Sparbetrieb;7=Handbetrieb Heizen,,
-#statusheatpump:status,UCH,0=Switched off;1=Heating mode;2=Lead time heating mode;3=Externally blocked;4=Cooling mode;5=Lead time cooling mode;6=Lead time de-icing mode;7=De-icing mode;8=Error;9=Drain off;10=De-icing blocking time;11=De-icing pre heat;12=De-icing 1;13=De-icing 2;14=De-icing 3;15=Alarm;16=Malfunction;17=Blocked;21=Flow temperature too high or too low;22=Switching hysteresis in heat pump manual operation exceeded;23=Heat source input temperature too high;24=Heat source outlet temperature to low;25=TKAmin Abschaltung;26=Bivalent switch-off;27=Warmwasser Ladesperre;28=Minimum off time;29=Minimum run time,,
-hpstatus:status,UCH,0=Abgeschaltet;1=Heizbetrieb;2=Vorlaufzeit Heizbetrieb;3=Extern gesperrt;4=Kühlbetrieb;5=Vorlaufzeit Kühlbetrieb;6=Vorlaufzeit Abtaubetrieb;7=Abtaubetrieb;8=Störung;9=Abtropfen;10=DT Ueberwachung;11=Abtau Vorheizung;12=Abtauen 1;13=Abtauen 2;14=Abtauen 3;15=Alarm;16=Störung;17=Blockiert;21=TWVmax Abschaltung;22=TWVsoll Abschaltung;23=TWEmax Abschaltung;24=TWAmin Abschaltung;25=TKAmin Abschaltung;26=Bivalenzabschaltung;27=Warmwasser Ladesperre;28=Minimale Auszeit;29=Minimale Einzeit,,
-#statusheating:status,UCH,0=Switched off;1=Normal heating mode;3=Economy heating mode;4=Frost protection mode;6=Hot water priority;7=Holiday mode;8=Party mode;9=Normal cooling mode;11=Economy cooling mode;13=Manual operation;15=Party mode cooling;16=Drying: heating phase;17=Drying: steady phase;18=Drying: cooling phase;19=Drying: final phase;22=Cooling mode extern;23=Heating mode extern,,
-hkstatus:status,UCH,0=Abgeschaltet;1=Heizbetrieb;3=Spar Heizbetrieb;4=Frostschutz;6=Warmwasservorrang;7=Ferienbetrieb;8=Party Betrieb;9=Kuehlbetrieb;11=Spar Kuehlbetrieb;13=Handbetrieb;15=Party Betrieb kuehlen;16=Austrocknung aufheizen;17=Austrocknen stationaer;18=Austrocknung auskuehlen;19=Austrocknung endphase;22=Kuehlbetrieb extern;23=Heizbetrieb extern,,
-#statusboiler:status,UCH,0=Switched off;1=Normal charge mode;2=Comfort charge mode - Legionella protection;5=Fault;8=Economy charge mode - Energy saving;10=Electric recharging;11=Charge aborted,,
-wwstatus:status,UCH,0=Abgeschaltet;1=Normal Ladebetrieb;2=Komfort Ladebetrieb;5=Stoerung;8=Spar Ladebetrieb;10=Elektro Nachladung;11=Ladungsabbruch,,
-kpstatus:status,UCH,0=Aus;1=Ein,,
-modehotwater:status,UCH,0=Keine Ladung;1=Automatik;2=Normaltemperatur,,
-wpbetrieb:status,UCH,0=Aus;1=Automatik,,
-volume,UIN,10,,
-kwh,UIN,10,kW/h,
-mwh,UIN,,MW/h,
-#hours,HCD:2,,h,
-hours,HCD:3,,h,
-lmin,UIN,10,L/min,	
-cycles,HCD,,,
-err:errname,UCH,90=HEAT_PUMP,,
-wtime,HTI,,,time
-#
-tp_2h,BI0;BI1;BI2;BI3;BI4;BI5;BI6;BI7,,,Zeitprogramm 2 Stunden
-tp_8h,tp_2h;tp_2h;tp_2h;tp_2h,,,Zeitprogramm 8 Stunden
-tp_20h,tp_2h;tp_2h;tp_2h;tp_2h;tp_2h;tp_2h;tp_2h;tp_2h;tp_2h;tp_2h,,,Zeitprogramm 20 Stunden
-tp_mode,UCH;UCH;UCH;UCH;UCH;UCH;UCH;UCH;UCH;IGN:1,,,Modus Zeitprogramm
-tp_week,tp_20h;tp_20h;tp_20h;tp_20h;tp_20h;tp_20h;tp_20h;tp_20h;tp_8h,,,Zeitprogramm Woche
-tp_all,tp_mode;tp_20h;tp_20h;tp_20h;tp_20h;tp_20h;tp_20h;tp_20h;tp_20h;tp_8h,,,Zeitprogramm komplett
+# type (r[1-9];w;u),circuit,name,comment,QQ,ZZ,PBSB,ID,field,part (m;s),datatypes/templates,divider/values,unit,comment,field,part (m;s),datatypes/templates,divider/values,unit,comment,field,part (m;s),datatypes/templates,divider/values,unit,comment,field,part (m;s),datatypes/templates,divider/values,unit,comment,field,part (m;s),datatypes/templates,divider/values,unit,comment,field,part (m;s),datatypes/templates,divider/values,unit,comment,field,part (m;s),datatypes/templates,divider/values,unit,comment,field,part (m;s),datatypes/templates,divider/values,unit,comment,field,part (m;s),datatypes/templates,divider/values,unit,comment,field,part (m;s),datatypes/templates,divider/values,unit,comment,field,part (m;s),datatypes/templates,divider/values,unit,comment
+#Ochsner,MF=TEM;ID=24849;SW=0605;HW=0102,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#______________________________,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+*r,24849,,,,15,0621,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+*w,24849,,,,10,0623,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#______________________________,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#r5,ochsner,Aktuelle.Aussentemperatur.00.000,Aktuelle Aussentemperatur,,,,00800040,,,param,,,,,,tempt,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r5,ochsner,Aktuelle.Aussentemperatur.00.000,Aktuelle Aussentemperatur,,,,00800042,,,param,,,,,,tempt,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r1,ochsner,Istwert.Heizkreis.Vorlauftemp.00.002,Aktuelle Vorlauftemperatur des Heizkreises (same as 00.015),,,,77840008,,,param,,,,,,tempt,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r5,ochsner,Warmwassertemp.aktuell.00.004,aktuelle Warmwassertemperatur,,,,00840040,,,param,,,,,,tempt,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r1,ochsner,Vorlauftemp.Waermepumpe.TWV.00.007,Vorlauftemperatur Waermepumpe (Fuehler TWV),,,,00870042,,,param,,,,,,tempt,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r1,ochsner,Ruecklauftemp.Waermepumpe.TWR.00.008,Ruecklauftemperatur der Waermepumpe (Fuehler TWR),,,,00880042,,,param,,,,,,tempt,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r1,ochsner,Vorlauftemp.Puffersp.TPO.00.015,Anlagen Vorlauftemperatur (TPO) Oben Pufferspeicher,,,,7a800010,,,param,,,,,,tempt,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r1,ochsner,Vorlauftemp.Puffersp.TPM.00.017,Anlagen Vorlauftemperatur (TPM) Mitte Pufferspeicher,,,,7a810010,,,param,,,,,,tempt,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r1,ochsner,Austrittstemp.Waermequelle.TQA.00.070,IST Temp. TQA,,,,00c60042,,,param,,,,,,tempt,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r1,ochsner,Eintrittstemp.Waermequelle.TQE.00.071,IST Temp. TQE,,,,00c70042,,,param,,,,,,tempt,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r1,ochsner,Vorlauftemp.Anlage.00.096,Anlagen Vorlauftemperatur,,,,7a820010,,,param,,,,,,tempt,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#______________________________,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r1,ochsner,Aktueller.Raumsollwert.01.001,Aktueller Raumsollwert,,,,77830008,,,param,,,,,,tempt,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r1,ochsner,Sollwert.Heizkreis.Vorlauftemp.01.002,Sollwert Heizkreis Vorlauftemperatur,,,,77850008,,,param,,,,,,tempt,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r1,ochsner,Warmwassertemp.SOLL.aktuell.01.004,Aktueller Warmwassersollwert,,,,7982000e,,,param,,,,,,tempt,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r1,ochsner,Status.Heizkreispumpe.01.020,Status Heizkreispumpe,,,,01940048,,,param,,,,,,kpstatus,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r1,ochsner,Mischer.Heizkreispumpe.01.021,Mischer Heizkreis,,,,7581000a,,,param,,,,,,percent,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r1,ochsner,Status.Waermeerzeugerpumpe.01.022,Waermeerzeugerpumpe Ausgangsstatus,,,,01960042,,,param,,,,,,percent100,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r1,ochsner,Warmwasserbereitung.mit.Waermepumpe.01.066,Status Heizkreispumpe,,,,01c2004e,,,param,,,,,,kpstatus,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#r1,ochsner,Drehzahl.Waermeerzeugerpumpe.01.076,SOLL Verdichter Drehzahl,,,,01cc0042,,,param,,,,,,percent100,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r1,ochsner,Drehzahl.Waermeerzeugerpumpe.01.076,SOLL Verdichter Drehzahl,,,,01cc0042,,,param,,,,,,percent,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r1,ochsner,Drehzahl.Waermequellenpumpe.01.077,Pumpe Wärmequelle,,,,7b820002,,,param,,,,,,percent,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#______________________________,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r1,ochsner,Aussentemperatur.Mittelwert.02.020,Aussentemperatur Mittelwert,,,,77820008,,,param,,,,,,tempt,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r1,ochsner,Status.Heizkreis.02.051,Status Heizkreis,,,,77800008,,,param,,,,,,hkstatus,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r1,ochsner,Status.Warmwasser.02.052,Status Warmwasser,,,,7980000e,,,param,,,,,,wwstatus,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#r5,ochsner,Status.Waermepumpe.02.053,Status Waermepumpe,,,,02b50040,,,param,,,,,,hpstatus,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r5,ochsner,Status.Waermepumpe.02.053,Status Waermepumpe,,,,02b50042,,,param,,,,,,hpstatus,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r1,ochsner,Waermepumpe.Schaltzyklen.02.080,Operating cycles,,,,7d850002,,,param2,,,,,,cycles,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r1,ochsner,Waermepumpe.Betriebsstunden.02.081,Waermepumpe Betriebsstunden,,,,7d860002,,,param1,,,,,,hours,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#______________________________,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r1,ochsner,Fusspunkt.Vorlauftemp.Heizen.03.001,Fusspunkt Vorlauftemperatur Heizbetrieb,,,,03810048,,,param,,,,,,tempt,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+w,ochsner,Fusspunkt.Vorlauftemp.Heizen.03.001,Fusspunkt Vorlauftemperatur Heizbetrieb,,,,03810048,,,,,,,,,tempt,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r1,ochsner,Norm.Aussentemperatur.03.012,Norm.Aussentemperatur,,,,038c0048,,,param,,,,,,temp3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+w,ochsner,Norm.Aussentemperatur.03.012,Norm.Aussentemperatur,,,,038c0048,,,,,,,,,temp3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r1,ochsner,Vorlauftemp.Norm.Aussentemp.03.013,Vorlauftemperatur bei Norm.Aussentemperatur,,,,038d0048,,,param,,,,,,temp1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+w,ochsner,Vorlauftemp.Norm.Aussentemp.03.013,Vorlauftemperatur bei Norm.Aussentemperatur,,,,038d0048,,,,,,,,,temp1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r1,ochsner,Heizgrenze.03.021,Heizgrenze,,,,63850008,,,param,,,,,,tempt,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+w,ochsner,Heizgrenze.03.021,Heizgrenze,,,,63850008,,,,,,,,,tempt,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r1,ochsner,Betriebswahl.Heizkreis.03.050,Betriebswahl Heizung,,,,03b20048,,,param,,,,,,hkbetrieb,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+w,ochsner,Betriebswahl.Heizkreis.03.050,Betriebswahl Heizung,,,,03b20048,,,,,,,,,hkbetrieb,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r1,ochsner,Solltemperatur.Heizbetrieb.03.051,gewuenschte Raumtemperatur,,,,03b30048,,,param,,,,,,tempt,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+w,ochsner,Solltemperatur.Heizbetrieb.03.051,gewuenschte Raumtemperatur,,,,03b30048,,,,,,,,,tempt,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r1,ochsner,Solltemperatur.Heizbetrieb.Nacht.03.053,gewuenschte Raumtemperatur Nacht,,,,03b50048,,,param,,,,,,tempt,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+w,ochsner,Solltemperatur.Heizbetrieb.Nacht.03.053,gewuenschte Raumtemperatur Nacht,,,,03b50048,,,,,,,,,tempt,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#______________________________,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r1,ochsner,Betriebswahl.Warmwasser.05.050,Aktuelle Betriebswahl Warmwasser,,,,05b2004e,,,param,,,,,,modehotwater,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+w,ochsner,Betriebswahl.Warmwasser.05.050,Aktuelle Betriebswahl Warmwasser,,,,05b2004e,,,,,,,,,modehotwater,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r1,ochsner,Warmwassertemp.SOLL.05.051,Aktueller Warmwassersollwert,,,,05b3004e,,,param,,,,,,tempt,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+w,ochsner,Warmwassertemp.SOLL.05.051,Aktueller Warmwassersollwert,,,,05b3004e,,,,,,,,,tempt,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r1,ochsner,Warmwassertemp.Spar.05.086,Spar Warmwassertemperatur,,,,05d6004e,,,param,,,,,,tempt2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+w,ochsner,Warmwassertemp.Spar.05.086,Spar Warmwassertemperatur,,,,05d6004e,,,,,,,,,tempt2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#______________________________,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r1,ochsner,Betriebswahl.Waermepumpe.09.075,Betriebswahl Wärmeerzeuger 09-075,,,,09cb0042,,,param,,,,,,wpbetrieb,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#______________________________,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r1,ochsner,Volumenstrom.Waermenutzung.21.002,aktueller Volumenstrom heizungsseitig,,,,7d870002,,,param,,,,,,lmin,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r1,ochsner,Volumenstrom.Waermequelle.21.090,aktueller Volumenstrom Waermequelle,,,,7d880002,,,param,,,,,,lmin,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,									
+#______________________________,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r1,ochsner,Heizenergie.kWh.23.001,Heizenergie (part kWh),,,,7d890002,,,param,,,,,,kwh,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r1,ochsner,Heizenergie.MWh.23.010,Heizenergie (part MWh),,,,7d8a0002,,,param,,,,,,mwh,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r1,ochsner,Warmwasserenergie.MWh.23.013,Warmwasserenergie (part MWh),,,,7d8c0002,,,param,,,,,,mwh,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r1,ochsner,Warmwasserenergie.kWh.23.066,Warmwasserenergie (part kWh),,,,7d8b0002,,,param,,,,,,kwh,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#______________________________,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r9,ochsner,Waermepumpe.Datum.02.070,Datum Waermepumpe,,,,02c60040,,,param,,,,,,DAY,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+w,ochsner,Waermepumpe.Datum.02.070,Datum Waermepumpe,,,,02c60040,,,DAY,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+r9,ochsner,Waermepumpe.Uhrzeit.02.072,Uhrzeit Waermepumpe,,,,02c80040,,,param,,,,,,MIN,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+w,ochsner,Waermepumpe.Uhrzeit.02.072,Uhrzeit Waermepumpe,,,,02c80040,,,MIN,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#______________________________,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#*r,ww_timeprogramm,,,,15,0622,05,,,,,,,,,,,,,,,,,,,,,,,,
+#r1,ochsner,tp0_ww,Zeitprogramm Warmwasser Teil 1,,,,bd004e,mode,,tp_mode,,,,,,,,,,,,,,,,,,,,,
+#r1,ochsner,tp1_ww,Zeitprogramm Warmwasser Teil 2,,,,bd014e,schedule,,tp_20h,,,,,,,,,,,,,,,,,,,,,
+#r1,ochsner,tp2_ww,Zeitprogramm Warmwasser Teil 3,,,,bd024e,schedule,,tp_20h,,,,,,,,,,,,,,,,,,,,,
+#r1,ochsner,tp3_ww,Zeitprogramm Warmwasser Teil 4,,,,bd034e,schedule,,tp_20h,,,,,,,,,,,,,,,,,,,,,
+#r1,ochsner,tp4_ww,Zeitprogramm Warmwasser Teil 5,,,,bd044e,schedule,,tp_20h,,,,,,,,,,,,,,,,,,,,,
+#r1,ochsner,tp5_ww,Zeitprogramm Warmwasser Teil 6,,,,bd054e,schedule,,tp_20h,,,,,,,,,,,,,,,,,,,,,
+#r1,ochsner,tp6_ww,Zeitprogramm Warmwasser Teil 7,,,,bd064e,schedule,,tp_20h,,,,,,,,,,,,,,,,,,,,,
+#r1,ochsner,tp7_ww,Zeitprogramm Warmwasser Teil 8,,,,bd074e,schedule,,tp_20h,,,,,,,,,,,,,,,,,,,,,
+#r1,ochsner,tp8_ww,Zeitprogramm Warmwasser Teil 9,,,,bd084e,schedule,,tp_20h,,,,,,,,,,,,,,,,,,,,,
+#r1,ochsner,tp9_ww,Zeitprogramm Warmwasser Teil 10,,,,bd094e,schedule,,tp_8h,,,,,,,,,,,,,,,,,,,,,
+#r1,ochsner,Zeitprogramm.Warmwasser.Komplett,Zeitprogramm Warmwasser,,,,bd004e;bd014e;bd024e;bd034e;bd044e;bd054e;bd064e;bd074e;bd084e;bd094e,all,,tp_all,,,,,,,,,,,,,,,,,,,,,
+#______________________________,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#______________________________,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
